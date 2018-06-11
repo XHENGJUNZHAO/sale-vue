@@ -1,0 +1,514 @@
+body, div, section, p, h1, h2, h3, h4, h5, h6, table, thead, tbody, tr, th, td, ul, ol, li, label {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+button, input {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  color: rgba(36, 34, 34, 0.85);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before {
+  content: "";
+  display: block;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.row {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.bg {
+  background: #fff;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.full {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .col-1-sm {
+    width: 8.33333%;
+  }
+  .col-2-sm {
+    width: 16.66667%;
+  }
+  .col-3-sm {
+    width: 25%;
+  }
+  .col-4-sm {
+    width: 33.33333%;
+  }
+  .col-5-sm {
+    width: 41.66667%;
+  }
+  .col-6-sm {
+    width: 50%;
+  }
+  .col-7-sm {
+    width: 58.33333%;
+  }
+  .col-8-sm {
+    width: 66.66667%;
+  }
+  .col-9-sm {
+    width: 75%;
+  }
+  .col-10-sm {
+    width: 83.33333%;
+  }
+  .col-11-sm {
+    width: 91.66667%;
+  }
+  .col-12-sm {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+ul.navbar li {
+  float: left;
+  display: block;
+}
+
+.bg:before, .container:before, .full:before {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.bg:after, .container:after, .full:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.nav-path {
+  width: 100%;
+  background: #fff;
+}
+
+.nav-path ul {
+  padding: 5px 0;
+}
+
+.nav-path li {
+  float: left;
+}
+
+.nav-path li a {
+  color: #e8e363;
+  text-decoration: none;
+}
+
+.nav-path li a:after {
+  content: "\e9fe";
+}
+
+.project-bk {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.project-head {
+  width: 100%;
+  background: #e8e363;
+}
+
+.project-head .project-logo {
+  padding: 20px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.project-head .project-logo small:after {
+  content: "\e626";
+}
+
+.project-head .project-logo #show-city {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background: #fff;
+  z-index: 9999;
+  top: 60px;
+  display: none;
+}
+
+.project-head .project-logo #show-city p {
+  padding: 5px;
+  border-bottom: 1px solid #999;
+  box-sizing: border-box;
+}
+
+.project-head .project-logo #show-city p small {
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 2px;
+}
+
+.project-head .project-logo #show-city p small:after {
+  content: "";
+}
+
+.project-head .project-logo #show-city p span {
+  font-size: 12px;
+}
+
+.project-head .project-logo #show-city p span:after {
+  content: "\e614";
+  font-size: 16px;
+  color: #ff403a;
+}
+
+.project-head .project-logo #show-city .city-tag {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  display: block;
+}
+
+.project-head .project-logo #show-city .city-tag span {
+  font-size: 15px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 2px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.project-head .project-logo #show-city .city-tag span.chose {
+  border-color: #8ab4e8;
+  color: #8ab4e8;
+}
+
+.project-head ul {
+  width: 150px;
+  display: -webkit-box;
+  margin-left: 2%;
+}
+
+.project-head ul li {
+  width: 100%;
+  padding: 20px 0;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+
+.project-head ul li a {
+  text-decoration: none;
+}
+
+.project-head ul li:hover {
+  background: rgba(7, 3, 3, 0.2);
+}
+
+.project-search {
+  padding: 20px;
+}
+
+.project-search input {
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  background: #fff;
+  padding-left: 10px;
+}
+
+.project-user {
+  padding: 10px;
+}
+
+.project-user a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.project-user a img {
+  width: 100%;
+}
+
+.show-hide-nav {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  height: 25px;
+  width: 25px;
+}
+
+.show-hide-nav button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 1px;
+  background: #f6ffe3;
+}
+
+.show-hide-nav button span {
+  background: #141414;
+  width: 100%;
+  height: 4px;
+  margin: 2px 0;
+  display: block;
+}
+
+.hide-nav {
+  position: absolute;
+  background: #efeb8f;
+  width: 100%;
+  left: 0;
+  bottom: 60px;
+  transition: all .5s linear;
+  z-index: 9999;
+}
+
+.hide-nav ol {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.hide-nav ol li {
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hide-nav ol li span {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.hide-nav ol li span:after {
+  content: "\e9fe";
+  font-size: 20px;
+}
+
+.down {
+  bottom: -160px;
+  transition: all .5s linear;
+}
+
+@media screen and (min-width: 360px) {
+  .show-hide-nav {
+    display: block;
+  }
+  .project-search {
+    display: none;
+  }
+  .project-user {
+    display: none;
+  }
+  .project-head ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show-hide-nav {
+    display: block;
+  }
+  .project-search {
+    display: none;
+  }
+  .project-user {
+    display: none;
+  }
+  .project-head ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-logo {
+    font-size: 18px;
+    padding: 30px 0 !important;
+  }
+  .project-logo small {
+    font-size: 16px;
+  }
+  .project-head ul {
+    display: block;
+    display: -webkit-box;
+  }
+  .project-head ul li {
+    padding: 30px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+  .project-search {
+    margin-left: 20px;
+    padding: 27px 0;
+    display: block;
+  }
+  .project-search input {
+    height: 28px;
+  }
+  .project-user {
+    padding: 15px;
+    display: block;
+  }
+  .project-user a {
+    height: 50px;
+    width: 50px;
+  }
+  .show-hide-nav {
+    display: none;
+  }
+  .hide-nav {
+    bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-logo {
+    font-size: 18px;
+    padding: 30px 0 !important;
+  }
+  .project-logo small {
+    font-size: 16px;
+  }
+  .project-head ul li {
+    padding: 30px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+  .project-search {
+    display: block;
+    margin-left: 20px;
+    padding: 27px 0;
+  }
+  .project-search input {
+    height: 28px;
+  }
+  .project-user {
+    display: block;
+    padding: 15px;
+  }
+  .project-user a {
+    height: 50px;
+    width: 50px;
+  }
+  .show-hide-nav {
+    display: none;
+  }
+  .hide-nav {
+    bottom: 90px;
+  }
+}

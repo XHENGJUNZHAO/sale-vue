@@ -1,0 +1,129 @@
+@import "color";
+$footColor:#666;
+.full{
+    background:$footColor;
+}
+//手机端底部
+// .foodRoad-app-footer{
+//     display:none;
+// }
+// .footer-app-nav{
+//     width:100%;
+//     & li{
+//         padding:10px 0;
+//         float: left;
+//         display:block;
+//         width:33.333333%;
+//     }
+//     & li:nth-child(2){
+//         &:before{
+//             content: "\e67e";
+//         }
+//     }
+//     & li:nth-child(1){
+//         &:before{
+//             content: "\e692";
+//         }
+//     }
+//     & li:nth-child(3){
+//         &:before{
+//             content: "\e661";
+//         }
+//     }
+// }
+.copyright-box{
+    width:100%;
+    margin:65px 0;
+    p{
+        text-align: center;
+        color: rgb(36, 34, 34); 
+    }
+}
+//引入fonticon
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+//联系我
+.contact-me{
+    & p{
+        color:$baseColor;
+        font-weight: 600;
+        margin:20px 0;
+    }
+    & ul{
+        margin-bottom:20px;
+        & li{
+            position: relative;
+            display: block;
+            margin-right:10px;
+            width:40px;
+            height:40px;
+            & a{
+                background:#fff;
+                display: block;
+                border:1px solid #999;
+                width:38px;
+                height:38px;
+                box-shadow: 0 2px 3px 0 #333; 
+                border-radius:50%;
+                position: relative;
+                &:hover{
+                      & svg{
+                          opacity:0.8;
+                      }
+                    //box-shadow: 0 4px 6px 0 black;
+                      & .qrcode-weixin{
+                        display:block;
+                    }
+                }
+                & svg{
+                    width:100%;
+                    height:100%;
+                }
+                & .qrcode-weixin{
+                    position: absolute;
+                    display:none;
+                    margin-top:10px;
+                    top:-125px;
+                    width:100px;
+                    height:100px;
+                    padding:5px;
+                    border-radius: 5px;
+                    background:#f2f2f2;
+                    & .triangle{
+                        position: absolute;
+                        top:100px;
+                        left:10px;
+                        width:0;
+                        height:0;
+                        border-width:10px 10px 0 10px;
+                        border-color:#f2f2f2 transparent;
+                        border-style:solid;
+                    }
+                    & img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width:768px) and (min-width:360px){
+//     .foodRoad-web-footer{
+//         display:none;
+//     }
+//     .foodRoad-app-footer{
+//         display:block;
+//     }
+//     .full{
+//         background:pink;
+//     }
+// }
+// @media screen and (max-width:970px){
+//     .show{
+//         display:block;
+//     }
+// }

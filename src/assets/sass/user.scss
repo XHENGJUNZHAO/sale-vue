@@ -1,0 +1,100 @@
+@import "color";
+body{
+    background:#f2f2f2;
+}
+.user-head{
+    padding:10px;
+    background:#fff;
+    div{
+        border:1px solid #fff;
+        border-radius: 50%;
+        width:80px;
+        height:80px;
+        padding:5px;
+        img{
+            width:100%;
+        }
+    }
+    .user-info{
+        border:none;
+        margin-left:5px;
+        width: 150px;
+        p{
+            margin-top:15px;
+        }
+    }
+}
+.user-body{
+    background:#fff;
+    margin-top:20px;
+    padding:10px;
+}
+.user-nav{
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 2px #999;
+    ul{
+        width:100%;
+        padding:5px;
+        box-sizing: border-box;
+        li{
+            width:100%;
+            padding:10px;
+            border-bottom:1px solid #999;
+            box-sizing: border-box;
+        }
+        li:last-child{
+            border:none;
+        }
+    }
+}
+.nav-content{
+    padding:20px;
+    h4{
+        padding:2px;
+        border-bottom:1px solid #999;
+        box-sizing: border-box;
+        width:100%;
+    }
+}
+.content-basic{
+    padding:10px;
+    form{
+        position: relative;    
+    }
+    div{
+        padding:20px 10px;
+        font-size: 16px;
+        width:50%;
+        span{
+            display: inline-block;
+            width:120px;
+        }
+        input{
+            font-size: 16px;
+        }
+    }
+    button{
+        padding:10px;
+        width:100px;
+        margin:20px auto;
+        background:$color1;
+        font-size: 18px;
+        border-radius: 5px;
+        display: block;
+    }
+    .user-avatar{
+        position: absolute;
+        width:100px;
+        height:100px;
+        right:150px;
+        top:0;
+        img{
+            width:100%;
+        }
+        button{
+            padding:2px;
+            width:70%;
+            margin:0px;
+        }
+    }
+}

@@ -1,0 +1,220 @@
+@import "color";
+
+body{
+    background: #f2f2f2;
+}
+.sale-index{
+    width:100%;
+    position: relative;
+    box-sizing: border-box;
+    img{
+        width: 100%;
+        height:100%;
+    }
+}
+.sale-logo{
+    position: absolute;
+    top:0;
+    left:0;
+    background:transparent;
+    box-sizing: border-box;
+    padding:10px;
+    span{
+       font-size: 25px;
+    }
+    small{
+        &:after{
+            content:"\e626";
+        }
+    }
+}
+.search{
+    position: absolute;
+    width:100%;
+    top:70%;
+    input{
+        display: block;
+        border:1px solid black;
+        width:40%;
+        margin:0 auto;
+        padding:7px;
+        background:#fff;
+        box-shadow: 1px 1px 2px black;
+    }
+}
+.sale-user{
+    position: absolute;
+    right:0;
+    top:0;
+    padding:10px;
+    a{
+        display:block;
+        box-sizing: border-box;
+        width:40px;
+        height:40px;
+        border:1px solid #fff;
+        border-radius: 50%;
+    }
+}
+.body-nav{
+    width:100%;
+    padding:5px;
+    background: #fff;
+    ul{
+        width:100%;
+        display: -webkit-box;
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        li{
+            -webkit-box-flex: 1;
+            text-align: center;
+            span{
+                display: block;
+                font-size:50px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+.index-body{
+    margin-top:10px;
+    width:100%;
+    background-color: #fff;
+    padding:10px 20px 30px;
+    .recommend{
+        width:100%;
+        h4{
+            font-size:20px;
+            border-bottom:1px solid hsla(0, 7%, 71%, 0.2);
+            padding:5px 0;
+            small{
+                font-size:16px;
+            }
+        }
+    }
+}
+.house-item{
+    margin:.5%;
+    box-shadow: 0 2px 3px hsla(0, 3%, 36%, 0.2);
+    width:24%;
+    float:left;
+    position: relative;
+    .house-pic{
+        width:100%;
+        padding:10px;
+        img{
+            width:100%;
+        }
+    }
+    .house-info{
+        width:100%;
+        padding:0 5px;
+        h4{
+           font-size:16px;
+           padding:0;
+           overflow: hidden;
+           white-space: nowrap;
+           border:none;
+        }
+        ul{
+            display:-webkit-box;
+            padding:5px 0;
+            li{
+                -webkit-box-flex: 1;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .house-price{
+        background:hsla(0, 3%, 36%, 0.8);
+        position: absolute;
+        left:0;
+        top:60%;
+        border-radius: 0 7px 7px 0;
+        a{
+            text-decoration: none;
+            color:#fff;
+            display: block;
+            padding:2px;
+        }
+    }
+}
+
+//屏幕下拉导航跟随样式
+.nav-head{
+    display:none;
+    width:100%;
+    position: fixed;
+    top:0;
+    background-color:hsla(0, 3%, 36%, 0.8);
+    z-index: 666;
+    div{
+        width:20%;
+        box-sizing: border-box;
+        padding:20px 0;
+        p{
+            text-align: center;
+            color:#fff;
+        }
+    }
+    ul{
+        width:80%;
+        display:-webkit-box;
+    }
+    li{
+        -webkit-box-flex: 1;
+        text-align: center;
+        padding:20px 0;
+        
+        &:hover{
+            background:hsla(0, 0%, 0%, 0.575);
+        }
+    }
+    span{
+        color:#fff;
+    }
+}
+.follow{
+    display:block;
+}
+@media screen and (min-width:360px) {
+    .house-item{
+        width:49%;
+        font-size:10px;
+    }
+}
+@media screen and (min-width:768px) {
+    .house-item{
+        width:49%;
+        font-size:16px;
+    }
+}
+@media screen and (min-width:992px){
+    .house-item{
+        width:32%;
+        font-size:16px;
+    }
+}
+@media screen and (min-width:1200px){
+    .sale-index{
+       height:500px;
+    }
+    .sale-logo{
+        margin:50px;
+    }
+    .sale-user{
+        margin:50px;
+    }
+    .house-item{
+        width:24%;
+        font-size:16px;
+    }
+}

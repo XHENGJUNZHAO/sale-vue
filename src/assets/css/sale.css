@@ -1,0 +1,82 @@
+body {
+  background: #f2f2f2;
+}
+
+.sale-body {
+  background: #fff;
+}
+
+.sale-body .sale-head ul {
+  display: -webkit-box;
+  width: 220px;
+  padding: 5px;
+}
+
+.sale-body .sale-head ul li {
+  -webkit-box-flex: 1;
+  padding: 5px 0;
+}
+
+.sale-body .sale-head ul li a {
+  font-size: 20px;
+  width: 100%;
+}
+
+.sale-body .sale-head ul li.hold a {
+  color: #8ab4e8;
+  font-size: 22px;
+}
+
+.set-info {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.set-info div {
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+.set-info div span {
+  display: inline-block;
+  width: 120px;
+}
+
+.set-info div input {
+  font-size: 16px;
+}
+
+.set-info button {
+  width: 100px;
+  padding: 10px;
+  background: #e8e363;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 10px auto;
+}
+
+.right-part div {
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.right-part div p {
+  color: #8ab4e8;
+}
+
+.right-part div small {
+  display: block;
+  color: #999;
+}
+
+.right-part div span {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  display: inline-block;
+  font-size: 25px;
+  color: #999;
+}

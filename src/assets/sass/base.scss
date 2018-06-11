@@ -1,0 +1,208 @@
+$baseColor:rgba(36, 34, 34, 0.85);
+$fontColor:rgb(235, 150, 38);
+$color1:rgb(232,227,99);
+$color2:rgb(255,64,58);
+$color3:rgb(138,180,232);
+$color4:rgb(191,241,255);
+$color5:rgb(246,255,227);
+$correct:rgba(25, 223, 35, 0.9);
+$wrong:rgba(240, 12, 12, 0.9);
+$bdr:1px solid #999;
+$box:2px 2px 2px 0 rgba(0,0,0,.15);  
+
+body,div,section,p,h1,h2,h3,h4,h5,h6,table,thead,tbody,tr,th,td,ul,ol,li,label{
+    padding:0;
+    margin:0;
+}
+a:hover{
+    text-decoration: none;
+}
+div{
+    box-sizing: border-box;
+}
+button,input{
+    outline:none;
+    background:none;
+    border:none;
+}
+ul,ol,li{
+    list-style:none;
+}
+a{
+    color:$baseColor;
+    text-decoration:none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+//清除浮动
+.clearfix{
+    zoom: 1;
+    &:before{
+        content: "";
+        display: block;
+    }
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+//浮动
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+//行
+.row{
+    padding:0 15px;
+    margin:0 auto;
+}
+//列
+@function col($i){
+    @return ($i/12)*100%;
+}
+.col-1{
+    width:col(1);
+}
+.col-2{
+    width:col(2);
+}
+.col-3{
+    width:col(3);
+}
+.col-4{
+    width:col(4);
+}
+.col-5{
+    width:col(5);
+}
+.col-6{
+    width:col(6);
+}
+.col-7{
+    width:col(7);
+}
+.col-8{
+    width:col(8);
+}
+.col-9{
+    width:col(9);
+}
+.col-10{
+    width:col(10);
+}
+.col-11{
+    width:col(11);
+}
+.col-12{
+    width:col(12);
+}
+//盒子
+.bg{
+    background:#fff;
+}
+.container{
+    padding:0 15px;
+    margin:0 auto;
+    position: relative;
+}
+.full{
+    padding:0 15px;
+}
+@media screen and (min-width:768px) {
+    .container{
+        width:750px;
+    }
+    .col-1-sm{
+        width:col(1);
+    }
+    .col-2-sm{
+        width:col(2);
+    }
+    .col-3-sm{
+        width:col(3);
+    }
+    .col-4-sm{
+        width:col(4);
+    }
+    .col-5-sm{
+        width:col(5);
+    }
+    .col-6-sm{
+        width:col(6);
+    }
+    .col-7-sm{
+        width:col(7);
+    }
+    .col-8-sm{
+        width:col(8);
+    }
+    .col-9-sm{
+        width:col(9);
+    }
+    .col-10-sm{
+        width:col(10);
+    }
+    .col-11-sm{
+        width:col(11);
+    }
+    .col-12-sm{
+        width:col(12);
+    }
+}
+@media screen and (min-width:992px) {
+    .container{
+        width:970px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container{
+        width:80%;
+    }
+}
+//横向列表
+ul.navbar{
+    li{
+        float:left;
+        display:block;
+    }
+}
+.bg,.container,.full{
+    &:before{
+        clear: both;
+        content:"";
+        display:block;
+    }
+    &:after{
+        clear: both;
+        content:"";
+        display:block;
+    }
+}
+//路径导航
+.nav-path{
+    width: 100%;
+    background:#fff;
+    ul{
+        padding: 5px 0;
+    }
+    li{
+        float: left;
+        a{
+            color:$color1;
+            text-decoration: none;
+            &:after{
+                content:"\e9fe";
+            }
+        }
+    }
+}
+
+.project-bk{
+    background:#fff;
+    height:100%;
+    width:100%;
+}
